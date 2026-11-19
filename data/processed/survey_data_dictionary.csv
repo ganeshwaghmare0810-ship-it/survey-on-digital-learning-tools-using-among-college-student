@@ -1,0 +1,26 @@
+Variable,Question_No,Description,Data_Type,Scale_Type,Allowed_Values,Multi_Select
+sno,N/A,Serial Number / Response ID,Integer,Identifier,1 to 69,No
+submitted_time,N/A,Timestamp of survey submission,DateTime,Temporal,2026-08-21 to 2026-09-07,No
+age,Q2,Age of respondent in years,Integer,Ratio,18 to 26,No
+gender,Q3,Gender identity,String,Nominal,"Male, Female, Other",No
+year_of_study,Q4,Academic class / degree program,String,Nominal,"SY Data science, SY computer science, TY computer science, etc.",No
+uses_tools,Q5,Whether student uses digital learning tools,String,Binary,"Yes, No",No
+tools_used,Q6,Digital learning platforms used for study,String,Nominal (Multi-select),"YouTube, ChatGPT/AI tools, Google Classroom, Zoom, Google Meet, Coursera, Duolingo, Education apps, Cloude",Yes (pipe-separated)
+frequency,Q7,Frequency of tool usage,String,Ordinal,"Daily, 4-6 days a week, 2-3 days a week, Once a week, Rarely",No
+time_per_day,Q8,Daily time dedicated to digital learning tools,String,Ordinal,"Less than 30 minutes, 30 minutes -1 hours, 1-2 hours, 2-3 hours, More than 3 hours",No
+helpfulness,Q10,Perceived helpfulness for academic studies,String,Ordinal,"slightly helpful, Moderately helpful, Very helpful, Extremely helpful",No
+main_benefit,Q11,Primary perceived benefits of digital learning,String,Nominal (Multi-select),"All, Better understanding of difficult topics, Helps in assignment/project, Quick Access to information, Save time, improve technical/learning skills, Important exam preparation",Yes (pipe-separated)
+biggest_advantage,Q12,Single greatest advantage identified,String,Nominal,"All of the above, Easy and quick Access to information, Save time, Easy explanation of difficult concept, Flexibility to study anytime and anywhere, Easy revision through recorded lectures",No
+problem_faced,Q17,Major obstacle or challenge encountered,String,Nominal,"Paid/Limited features, Internet connectivity issues, incorrect or misleading information, Privacy concerns",No
+device,Q15,Primary computing hardware used,String,Nominal,"Smartphone, Laptop, Tablet, Desktop",No
+access_location,Q16,Primary geographical location of study,String,Nominal,"Home, College, Hostel, Library",No
+most_useful_tools,Q9,Digital tools perceived as most academically useful,String,Nominal (Multi-select),"ChatGPT, Gemini, cloude, Perplexity, perfectly",Yes (pipe-separated)
+accuracy_rating,Q13,Perception of digital tool accuracy and reliability,String,Ordinal,"Highly accurate, Accurate, Neutral / Moderately accurate, Moderately inaccurate, Very inaccurate",No
+overall_experience,Q14,Overall satisfaction and experience rating,String,Ordinal,"Excellent, Good, Average, Poor, Very Poor",No
+costlier_learning_type,Q19,Mode of learning perceived as more expensive,String,Nominal,"Digital Learning Tools, Offline Learning, Depends on the course/institute, Both cost almost the same",No
+cost_comparison,Q18,Digital cost perception relative to offline education,String,Ordinal,"Much more expensive, Slightly more expensive, Almost the same, Slightly cheaper, Much cheaper",No
+ai_purpose,Q20,Primary functional purpose for leveraging AI tools,String,Nominal,"Clearing doubts and complex concepts, Coding / Programming debugging and help, Preparing assignments and project reports, Translation and grammar correction, Understanding math and statistical step-by-step solutions",No
+freq_score,Derived,Mapped frequency (1=Rarely to 5=Daily),Integer,Interval / Score,1 to 5,No
+help_score,Derived,Mapped helpfulness (1=Slightly to 4=Extremely),Integer,Interval / Score,1 to 4,No
+acc_score,Derived,Mapped accuracy trust (1=Very inaccurate to 5=Highly accurate),Integer,Interval / Score,1 to 5,No
+exp_score,Derived,Mapped overall experience (1=Very Poor to 5=Excellent),Integer,Interval / Score,1 to 5,No
